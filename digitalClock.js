@@ -21,7 +21,6 @@ function showTime(){
     var time = h + ":" + m + ":" + s + " " + session;
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
-<<<<<<< HEAD
     //changes show time after the given interval i.e 1 second.
     setTimeout(showTime, 1000);
     
