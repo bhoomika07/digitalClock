@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Digital Clock and Stop-Watch</title>
+        <style>
+            body{
+                background-color: black;
+                color:white;
+            }
+            .clock{
+                font-size: 200px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            #stopWatch
+            {
+                padding: 2%;
+                margin:0 auto;
+            }
+            button 
+            {
+                padding-left:3rem;
+                padding-right:3rem;
+                padding-bottom: 2rem;
+                padding-top: 2rem;
+                margin:2rem;
+                background-color: transparent;
+                opacity:0.75;
+                color:white;
+                border-color: beige;
+                border-radius: 2rem;
+                font-size: xx-large;
+                text-align: center;
+            }
+            button:hover
+            {
+                background-color: white;
+                color:black;
+            }
+            button:active
+            {
+                border:transparent;
+            }
+            .display
+            {
+                text-align: center;
+                font-size: xx-large;
+                color: white;
+                background-color: transparent;
+                padding: 2%;
+                margin: 0 auto;
+            }
+           .buttons{
+                text-align: center;
+            }
+        </style>
+    </head>
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div><br/>
+        <hr/>
+        <div id="stopWatch">
+            <div class="display"><span id='hours'>00</span><span>:</span><span id='minutes'>00</span><span>:</span><span id='seconds'>00</span><span>:</span><span id='tens'>00</span><br/></div>
+           <div class="buttons"><span><button id="start">Start</button></span>
+            <span><button id="stop">Stop</button></span>
+            <span><button id="reset">Reset</button></span></div>
+        </div>
+        <script src="digitalClock.js"></script>
+        <script src="stopWatch.js"></script>
+</html>
